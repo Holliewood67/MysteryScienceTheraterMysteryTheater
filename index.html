@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arrayOfURLs = [
+            "https://tubitv.com/movies/299181/mst3k-the-black-scorpion",
+            "https://tubitv.com/movies/320103/mst3k-the-crawling-eye",
+            "https://tubitv.com/movies/517722/mst3k-the-dead-talk-back",
+            "https://tubitv.com/movies/517734/mst3k-deathstalker-and-the-warriors-from-hell",
+            "https://tubitv.com/movies/517733/mst3k-escape-2000-escape-from-the-bronx",
+            "https://tubitv.com/movies/549355/mst3k-gamera-vs-guiron",
+            "https://tubitv.com/movies/548870/mst3k-gamera-vs-zigra",
+            "https://tubitv.com/movies/312848/mst3k-giant-spider-invasion",
+            "https://tubitv.com/movies/517731/mst3k-hobgoblins",
+            "https://tubitv.com/movies/517730/mst3k-invasion-of-the-neptune-men",
+            "https://tubitv.com/movies/405108/mst3k-legend-of-boggy-creek",
+            "https://tubitv.com/movies/445963/mst3k-merlin-s-shop-of-mystical-wonders",
+            "https://tubitv.com/movies/295887/mst3k-night-of-the-blood-beast",
+            "https://tubitv.com/movies/452492/mst3k-pod-people",
+            "https://tubitv.com/movies/517728/mst3k-prince-of-space",
+            "https://tubitv.com/movies/546233/mst3k-quest-of-the-delta-knights",
+            "https://tubitv.com/movies/326273/mst3k-samson-vs-the-vampire-women",
+            "https://tubitv.com/movies/432214/mst3k-werewolf",
+            "https://tubitv.com/movies/440101/mst3k-zombie-nightmare"
+
+            ]
+
+        function getMysteryMovie () 
+            {
+                let moviePick = Math.floor(Math.random() * arrayOfURLs.length);
+                console.log(moviePick);
+                window.open(arrayOfURLs[moviePick]);
+            }
+    </script>
+</head>
+<body>
+    <h1>Mystery Science Theater Mystery Theater</h1>
+    <div>
+        <br>
+        <br>
+        <br>
+        <button onclick="getMysteryMovie()">Grab Mystery Movie</button>
+    </div>
+</body>
+</html>
