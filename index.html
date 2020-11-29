@@ -32,17 +32,12 @@
             {
                 let moviePick = Math.floor(Math.random() * arrayOfURLs.length);
                 console.log(moviePick);
-                window.open(arrayOfURLs[moviePick]);
+                window.location.replace(arrayOfURLs[moviePick]);
             }
+
+        getMysteryMovie();
     </script>
 </head>
 <body>
-    <h1>Mystery Science Theater Mystery Theater</h1>
-    <div>
-        <br>
-        <br>
-        <br>
-        <button onclick="getMysteryMovie()">Grab Mystery Movie</button>
-    </div>
 </body>
 </html>
